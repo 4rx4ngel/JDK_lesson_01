@@ -7,8 +7,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class ClientGUI extends JFrame {
-    public static final int WIDTH = 400;
-    public static final int HEIGHT = 300;
+    public static final int WIDTH = 500;
+    public static final int HEIGHT = 500;
 
     private ServerWindow server;
     private boolean connected;
