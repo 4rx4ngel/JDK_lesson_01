@@ -67,7 +67,7 @@ public class ServerWindow extends JFrame {
         bottom.add(btnStart);
         bottom.add(new JPanel());
         bottom.add(btnStop);
-        add(log);
+        add(new JScrollPane(log));
         add(bottom, BorderLayout.SOUTH);
 
         setVisible(true);

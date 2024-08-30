@@ -64,7 +64,7 @@ public class ClientGUI extends JFrame {
     public void message(){
         if (connected){
             String text = tfMessage.getText();
-            if (!text.equals("")){
+            if (!text.isEmpty()){
                 server.message(name + ": " + text);
                 tfMessage.setText("");
             }
@@ -89,7 +89,7 @@ public class ClientGUI extends JFrame {
         tfIPAddress = new JTextField("127.0.0.1");
         tfPort = new JTextField("1234");
         tfLogin = new JTextField("username");
-        password = new JPasswordField("");
+        password = new JPasswordField("1234");
         btnLogin = new JButton("Login");
         btnLogin.addActionListener(new ActionListener() {
             @Override
